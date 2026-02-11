@@ -1,0 +1,17 @@
+{
+  "name": "Flutter Todo App",
+  "image": "mcr.microsoft.com/devcontainers/flutter:3.19",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code"
+      ]
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "flutter pub get"
+}
