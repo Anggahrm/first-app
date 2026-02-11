@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
 
           return Column(
             children: [
-              _buildStatsBar(provider),
+              _buildStatsBar(provider, context),
               Expanded(
                 child: ListView.builder(
                   padding: const EdgeInsets.symmetric(vertical: 8),
@@ -74,11 +74,11 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStatsBar(TodoProvider provider) {
+  Widget _buildStatsBar(TodoProvider provider, BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surfaceContainerHighest,
+        color: Theme.of(context).colorScheme.surfaceVariant,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
